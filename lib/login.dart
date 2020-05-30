@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_widgets/responsive_widgets.dart';
-import 'package:restaurant/bottomnavigation.dart';
 import 'package:restaurant/home.dart';
 import 'package:restaurant/resetpassword.dart';
 import 'package:restaurant/signup.dart';
@@ -109,10 +108,7 @@ class _LoginState extends State<Login> {
                   borderRadius: new BorderRadius.circular(5.0),
                 ),
                 onPressed: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) =>Homeclass()),
-                  );
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Bottomnav()));
                 },
               ),
             ),
