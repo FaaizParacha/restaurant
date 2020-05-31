@@ -6,6 +6,7 @@ import 'package:responsive_widgets/responsive_widgets.dart';
 import 'package:restaurant/home.dart';
 import 'package:restaurant/resetpassword.dart';
 import 'package:restaurant/signup.dart';
+import 'bottomNavBar.dart';
 import 'constants.dart';
 
 class Login extends StatefulWidget {
@@ -108,7 +109,7 @@ class _LoginState extends State<Login> {
                   borderRadius: new BorderRadius.circular(5.0),
                 ),
                 onPressed: (){
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Bottomnav()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>MyHomePage()));
                 },
               ),
             ),

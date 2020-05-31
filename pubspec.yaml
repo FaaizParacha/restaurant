@@ -26,7 +26,6 @@ dependencies:
   responsive_container:
   responsive_text_field: ^0.1.2
   flutter_dash: ^0.0.1
-  persistent_bottom_nav_bar: ^1.5.1
   responsive_widgets:
   date_time_format: ^0.1.1+1
   animated_widgets: ^1.0.4

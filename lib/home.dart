@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:restaurant/constants.dart';
 import 'package:restaurant/profile.dart';
 import 'package:restaurant/maindrawer.dart';
@@ -32,7 +33,7 @@ class _HomeclassState extends State<Homeclass> {
             padding: const EdgeInsets.only(left:16.0,right: 16,top: 10.0),
             child:  TextFormField(
               decoration:  InputDecoration(
-                suffixIcon: Icon(Icons.location_on,color: appColor),
+                suffixIcon: Icon(Icons.sort,color: appColor),
                 prefixIcon: Icon(Icons.search,color: appColor),
                 hintText: 'Search places',
                 filled: true,
@@ -213,17 +214,8 @@ class _HomeclassState extends State<Homeclass> {
           )
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        //backgroundColor: Colors.redAccent,
-        backgroundColor: Colors.white,
 
-        child: Icon(Icons.location_searching,
-          color: appColor,
-        ),
-        onPressed: () {},
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      
+
     );
   }
 }
